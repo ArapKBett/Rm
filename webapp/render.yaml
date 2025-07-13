@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: rmi-webapp
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    port: 8080

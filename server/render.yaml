@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rmi-server
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: JAVA_OPTS
+        value: "-Djava.rmi.server.hostname=0.0.0.0"
+    port: 1099
